@@ -1,0 +1,27 @@
+<div class="home">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-12">
+						<div class="home-box container padding-5">
+							<div class="card home-card-full">
+								<div class="card-header">
+									<strong>Item list show {{$ctrl.searchList.length}} from ({{$ctrl.itemList.length}})</strong>
+									<input class="form-control" 
+									placeholder="search..."
+									ng-change="$ctrl.onSearchChange($ctrl.searchInput, '{{$ctrl.searchInput}}')"
+									ng-model="$ctrl.searchInput">
+								</div>
+								<div class="card-body overflow">
+									<div class="list-group">
+										<div id="collapseOne" class="collapse show">
+											<a class="list-group-item" ng-repeat="item in $ctrl.searchList track by item.id" href="" >{{item.name}}</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+		</div>
+	</div>
+</div>

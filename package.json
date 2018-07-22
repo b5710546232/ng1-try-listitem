@@ -1,0 +1,16 @@
+{
+	"name": "ng-pj-template",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "live-server",
+		"json-server": " json-server --watch db.json --port 8081"
+	},
+	"dependencies": {
+		"live-server": "^1.2.0"
+	},
+	"devDependencies": {
+		"json-server": "^0.14.0"
+	}
+}
